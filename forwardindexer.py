@@ -25,6 +25,6 @@ for i in data:
             pass
 
 
-with open("forewardindex.json", "w") as f:
+with open("forwardindex.json", "w") as f:
     f.write(json.dumps(forwardindex))
 
