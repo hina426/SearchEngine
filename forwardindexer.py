@@ -27,4 +27,3 @@ for i in data:
 
 with open("forwardindex.json", "w") as f:
     f.write(json.dumps(forwardindex))
-
