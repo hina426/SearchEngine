@@ -12,15 +12,20 @@ with open("airwars.json") as f:
 with open("lexicon.json") as f:
     lexicon = json.load(f)
 
+with open("docIDs.json") as f:
+    docIDs = json.load(f)
+
+
 
 for i in data:
-    title = i["title"].split()
+    title = i["title"] + " " + i["content"]
+    title = title.split()
     for word in title:
         if pstemmer.stem(word) in lexicon.keys():
-            if i["id"] in forwardindex:
-                forwardindex[i["id"]].append(lexicon[pstemmer.stem(word)])
+            if docIDs[i["id"]] in forwardindex:
+                forwardindex[docIDs[i["id"]]].append(lexicon[pstemmer.stem(word)])
             else:
-                forwardindex[i["id"]] = [lexicon[pstemmer.stem(word)]]
+                forwardindex[docIDs[i["id"]]] = [lexicon[pstemmer.stem(word)]]
         else:
             pass
 

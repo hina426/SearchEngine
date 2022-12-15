@@ -8,7 +8,10 @@ invertedindex = {}
 for i in forwardindex:
     for wordID in forwardindex[i]:
         if wordID in invertedindex:
-            invertedindex[wordID].append(i)
+            if i in invertedindex[wordID]:
+                pass
+            else:
+                invertedindex[wordID].append(i)
         else:
             invertedindex[wordID] = [i]
 
