@@ -32,8 +32,6 @@ This project has been made as part of the coursework required for CS250 Data Str
 ## Acknowledgements
 
 - [The Anatomy of a Large Scale Hypertextual Web Search Engine](https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf)
-- [The Anatomy of a Large-Scale Hypertextual Web Search Engine] (file:///F:/Data%20Structures/Google%20Research%20Paper.pdf)
-- [The Anatomy of a Large-Scale Hypertextual Web Search Engine] (https://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf)
 
 ## Feedback
 
