@@ -2,7 +2,7 @@
 
 This project has been made as part of the coursework required for CS250 Data Structures & Algorithms.
 
-# [Project Live Here 🚀](https://umerkay.github.io/processorsim/)
+# [Project Live Here 🚀](https://github.com/hina426/SearchEngine)
 
 ### Project Goals 🥅
 
