@@ -1,13 +1,13 @@
 import json
 
 
-def docIDs(file):
+def docIDs(docTable, file):
         
     with open(file) as f:
         articles = json.load(f)
 
-    docIDs = {}
-    count = 0
+    docIDs = docTable
+    count = len(docTable)
 
 
     for article in articles:

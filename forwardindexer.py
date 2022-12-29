@@ -5,10 +5,10 @@ from nltk.corpus import stopwords
 
 
 
-def forwardIndex(file):
+def forwardIndex(fwdInd, file):
 
     pstemmer = PorterStemmer()
-    forwardindex = {}
+    forwardindex = fwdInd
 
     with open(file) as f:
         data = json.load(f)
@@ -20,7 +20,7 @@ def forwardIndex(file):
         docIDs = json.load(f)
 
 
-    docID = 0
+    docID = len(fwdInd)
 
     for i in data:
         title = i["title"]

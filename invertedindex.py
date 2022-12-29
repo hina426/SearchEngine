@@ -1,13 +1,13 @@
 import json
 
 
-def invertedIndex():
+def invertedIndex(inv):
         
     with open ("forwardindex.json") as f:
         forwardindex = json.load(f)
 
 
-    invertedindex = {}
+    invertedindex = inv
 
     #loops over the document ids
     for i in forwardindex:
@@ -16,6 +16,9 @@ def invertedIndex():
                 invertedindex[wordID][i] = forwardindex[i][wordID]
             else:
                 invertedindex[wordID] = {i : forwardindex[i][wordID]}
+
+    print(len(invertedindex), " words in inverted index")
+    
 
     with open("invertedindex.json", "w") as f:
         f.write(json.dumps(invertedindex))

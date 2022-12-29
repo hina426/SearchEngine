@@ -5,7 +5,7 @@ from nltk.corpus import stopwords
 
 
 
-def lexicon(file):
+def lexicon(lex, file):
         
     pstemmer = PorterStemmer()
 
@@ -22,7 +22,7 @@ def lexicon(file):
 
     stops = set(stopwords.words('english'))
 
-    finaldict = {}
+    finaldict = lex
     count = 0
     for word in listcontent:
         #performs stemming
