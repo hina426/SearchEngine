@@ -14,8 +14,9 @@ def lexicon(file):
 
     allcontent = ""
     for i in data:
-        allcontent += i["title"]
-        allcontent += i["content"]
+        #bcz we need titles and content from the files
+        allcontent += i["title"]            
+        allcontent += i["content"]            
 
     listcontent = allcontent.split()
 
@@ -24,8 +25,10 @@ def lexicon(file):
     finaldict = {}
     count = 0
     for word in listcontent:
-        word = pstemmer.stem(word)
-        if word in stops or word in string.punctuation or word in ["-", '"']:
+        #performs stemming
+        word = pstemmer.stem(word)  
+        #removes punctuation and all the words like a, an, the etc        
+        if word in stops or word in string.punctuation or word in ["-", '"']:   
             pass
         elif (word not in finaldict):
                 finaldict[word] = count

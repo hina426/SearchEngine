@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to bottom, #7611b1 0%, #8f3a64fb 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+  }
+
+header h1 {
+    font-family: Cursive, sans-serif;
+    color: #51e1fa;;
+    font-size: 36px;
+    padding-left: 4px;
+  }
+
+  h2 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: rgb(110, 229, 250); 
+    text-align: center; 
+  }
+
+#results a:hover {
+    color: #0f0; 
+  }
+#results {
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  #results ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #results li {
+    margin: 10px 0;
+    text-align: center; 
+  }
+  
+  #results a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(108, 224, 253);
+    
+  }
+
+
+
+

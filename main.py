@@ -1,10 +1,6 @@
 from docIDs import *
 from forwardindexer import *
 from invertedindex import *
-from lexicon import *
+from lexicon import lexicon as LEXICONCALL
 
-
-lexicon("airwars.json")
-docIDs("airwars.json")
-forwardIndex("airwars.json")
-invertedIndex()
+from singleWordSearch import *
