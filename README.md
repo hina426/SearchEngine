@@ -1,10 +1,10 @@
-# ❓ About the Project
+# 🔰 Search Engine
 
-This project has been made as part of the coursework required for CS250 Data Structures & Algorithms.
+Welcome to the Search Engine project! This project is a simple search engine implemented using HTML, CSS, Python, and the Flask framework.
 
-# [Project Live Here 🚀](https://github.com/hina426/SearchEngine)
+# [Project Live Here ↗](https://github.com/hina426/SearchEngine)
 
-### Project Goals 🥅
+### Project Goals 🔅
 
 1. Forward index
 2. Inverted index
